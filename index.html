@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="libs/rain.js" defer></script>
+
+	<style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+	  margin-top: 20px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 22px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+	  flex-direction: column;
+	  width: 320px;
+	  height: 400px;
+	  background-color: rgba(255,255,255,0.4);
+	  
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100px;
+      height: 100px;
+	  margin-bottom: 30px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+	<header id="header" class="header">
+		<div class="header_top">
+			<div class="container header_content">
+				<a class="logo" href="#"><img  src="img/logo.png" alt=""></a>
+				<nav class="header_navigation">
+					<ul class="header_list">
+						<li class="header_item">
+							<a href="#header" class="header_link">ГЛАВНАЯ</a>
+						</li>
+						<li class="header_item">
+							<a href="#about" class="header_link">ОБО МНЕ</a>
+						</li>
+						<li class="header_item">
+							<a href="#portfolio" class="header_link">ПОРТФОЛИО</a>
+						</li>
+						<li class="header_item">
+							<a href="" class="header_link">СЕРТИФИКАТЫ</a>
+						</li>
+						<li class="header_item">
+							<a href="" class="header_link">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="header_down">
+			<h1 class="header_title">Хорошая верстка сайтов</h1>
+			<p class="header_about_info">от HTML-верстальщика, <br> для которого верстка - это хобби :)</p>
+			
+			
+			<div class="button" id="button-3">
+				<div id="circle"></div>
+				<a href="#">ЗАКАЗАТЬ ВЕРСТКУ</a>
+			  </div>
+		</div>
+	</header>
+
+
+	<main class="main">
+		<div class="container">
+			<div id="about" class="about">
+				<div class="element-animation">
+					<h3 class="about_title">ОБО МНЕ</h3>
+				  </div>
+				
+
+				<div class="about_info">
+					<div class="element-animation">
+						<div class="abot_image"><img style="border-radius: 40px;height: 500px;" src="https://img.freepik.com/premium-vector/a-man-works-on-a-computer-guy-sitting-at-the-table-character-in-trendy-cartoon-flat-style_90529-58.jpg?w=826" alt=""></div>
+					  </div>
+					
+					<div class="about_text">
+
+						<div class="element-animation">
+							<h4 class="about_name">Меня зовут Магомед-Амин</h4>
+							<p class="about_txt">Раньше я даже не задумывался над профессией программиста, но в один момент все изменилось. Сейчас на момент когда я это пишу мне 14 лет и занимаюсь этим уже полгода, и на данный момент я освоил много программ и технолигий(правда с дизайном у меня все плохо). Начиналось все с того что по России запустили проект 'Код будущего', который набирал детей с школ что бы обучать их программировнию. Наша школа тоже приняла в нем участие.Сначала я не понимал что вообще происходит. Нам поставили хорошего учителя(которому я все еще благодарен) и он начал учить нас верстке.И так спустя много тем я понял какой принцип и начал верстать дома, очень много верстать. Теперь с 8+ макетами за плечами я сижу и делаю сайт с моим портфолио.Так же Код Будущего устраивала нам различные мероприятия в которых мы учавствовали. Но об этом поговорим позже...</p>
+						  </div>
+						
+					</div>
+				</div>
+			</div>
+
+
+			
+
+		
+		</div>
+	<div class="technology">
+	<h5 class="technology_title">Мои навыки и технологии которыми я пользуюсь</h5>
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide"><img src="img/rilheml.png" alt="">HTML</div>
+			  <div class="swiper-slide"><img src="img/css-PhotoRoom.png-PhotoRoom.png" alt="">CSS</div>
+			  <div class="swiper-slide"><img src="img/rilfigma.png" alt="">Figma</div>
+			  <div class="swiper-slide"><img src="img/git-PhotoRoom.png-PhotoRoom.png" alt="">GIT</div>
+			  <div class="swiper-slide"><img src="img/pngwing.com.png" alt="">Github</div>
+			  <div class="swiper-slide"><img src="img/vscode.png" alt="">VScode</div>
+			  <div class="swiper-slide"><img src="img/rilbot.png" alt="">Bootstrap</div>
+			  <div class="swiper-slide"><img src="img/phoroshop.png" alt="">Photoshop</div>
+			</div>
+		   <div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+	<div id="portfolio" class="portfolio">
+		<div class="container">
+			<h1 class="portfolio_title">НЕКОТОРЫЕ ИЗ МОИХ РАБОТ</h1>
+			
+			<div class="portfolio_cards">
+<div class="hover-text-one">
+  <figure class="effect-text-three">
+    <img src="img/cars macet.png" alt=""/>
+      <figcaption>
+	<h3 style="color: #fff;">Cars</h3>
+	<a href="https://hovanskiymaksim.github.io/carproyavlenie/" style="color: #fff;">Посмотреть макет</a>
+      </figcaption>			
+  </figure>
+</div>
+<div class="hover-text-one">
+  <figure class="effect-text-three">
+    <img src="img/стройка.png" alt=""/>
+      <figcaption>
+	<h3 style="color: #fff;">Building</h3>
+	<a href="https://hovanskiymaksim.github.io/building/" style="color: #fff;">Посмотреть макет</a>
+      </figcaption>			
+  </figure>
+</div>
+<div class="hover-text-one">
+	<figure class="effect-text-three">
+	  <img src="img/coffe.png " alt=""/>
+		<figcaption>
+	  <h3 style="color: #fff;">Coffe</h3>
+	  <a href="https://hovanskiymaksim.github.io/SuperHeroTop/" style="color: #fff;">Посмотреть макет</a>
+		</figcaption>			
+	</figure>
+  </div>
+
+</div>
+
+<div class="portfolio_cards">
+	<div class="hover-text-one">
+		<figure class="effect-text-three">
+		  <img src="img/ишятуыыы.png" alt=""/>
+			<figcaption>
+		  <h3 style="color: #fff;">business</h3>
+		  <a href="https://hovanskiymaksim.github.io/bizness/" style="color: #fff;">Посмотреть макет</a>
+			</figcaption>			
+		</figure>
+	  </div>
+	  <div class="hover-text-one">
+		<figure class="effect-text-three">
+		  <img src="img/gitara.png " alt=""/>
+			<figcaption>
+		  <h3 style="color: #fff;">Портфолио гитариста</h3>
+		  <a href="https://hovanskiymaksim.github.io/guitar/" style="color: #fff;">Посмотреть макет</a>
+			</figcaption>			
+		</figure>
+	  </div>
+	  <div class="hover-text-one">
+		<figure class="effect-text-three">
+		  <img src="img/ojjo.png " alt=""/>
+			<figcaption>
+		  <h3 style="color: #fff;">OJJO</h3>
+		  <a href="https://hovanskiymaksim.github.io/OJJO/" style="color: #fff;">Посмотреть макет</a>
+			</figcaption>			
+		</figure>
+	  </div>
+</div>
+
+
+
+		</div>
+	</div>
+			
+	</main>
+	
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      centeredSlides: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+	function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+  </script>
+<canvas class="rain"></canvas>
+</body>
+</html>

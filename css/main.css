@@ -1,0 +1,423 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.rain{
+	position: absolute;
+	z-index: 999;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/* анимация скрола */
+
+.element-animation {
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.element-animation {
+  margin: 2rem 0;
+  font-size: 3rem;
+  
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(100%);
+}
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
+
+.container{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* header *//* header *//* header */
+.header{
+	height: 100vh;
+	background-image: url(../img/yjen\ b\ ntk\ [problembo.com].jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.logo{
+	width: 75px;
+	height: 75px;
+}
+
+.header_top{
+	background-color: rgba(0,0,0,0.8);
+	height: 100px;
+	display: flex;
+	position: fixed;
+	width: 100%;
+
+}
+
+.header_content{
+	display: flex;
+	display: flex;
+	align-items: center;
+}
+
+.header_navigation{
+	margin-left: 600px;
+}
+
+.header_list{
+	display: flex;
+	gap: 25px;
+	list-style: none;
+}
+
+.header_link{
+	font-weight: 700;
+	font-size: 18px;
+    color: #16d688;
+}
+
+.header_link:hover{
+	color: #fff;
+}
+
+.header_link:after{
+	background-color: #16d688; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.header_link:hover::after{
+	width: 100%;
+}
+.header_link:focus::after{
+	width: 100%;
+}
+
+
+/* header down */
+
+.header_down{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.header_title{
+    padding-top: 20vh;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 9vh;
+}
+
+.header_about_info{
+	font-size: 45px;
+    line-height: 67px;
+    color: #fff;
+    text-align: center;
+}
+
+#button-3 {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 2;
+	display: block;
+	width: 326px;
+	height: 76px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.8);
+	margin-top: 50px;
+}
+  
+#button-3 a {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #ffffff;
+	border-radius: 20px;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;	
+	position: relative;
+	transition: all .45s ease-Out;
+}
+  
+#circle {
+	width: 0%;
+	height: 0%;
+	opacity: 0;
+	line-height: 40px;
+	border-radius: 50%;
+	background: #16d688;
+	position: absolute;
+	transition: all .5s ease-Out;
+	top: 38px;
+	left: 162px;
+}
+  
+#button-3:hover #circle {
+width: 200%;
+height: 500%;
+opacity: 1;
+top: -36px;
+left: -164px;
+}
+
+  /* main */  /* main */  /* main */
+
+.about_title{
+	font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+	z-index: 50px;
+	margin-top: 100px;
+	transition: all 0.3s;
+}
+
+.about_title:hover{
+	color: #16d688;
+}
+
+.about_info{
+	display: flex;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+.abot_image{
+    margin-right: 30px;
+	width: 420px;
+	height: 100%;
+}
+
+.about_name{
+	font-size:25px;
+	color: #fff;
+	transition: all 0.3s;
+}
+
+.about_name:hover{
+	color: #16d688;
+}
+
+.about_txt{
+	line-height: 30px;
+	margin-top: 20px;
+	font-size: 19px; 
+	color: #fff;
+	width: 600px;
+}
+
+.about_txt:hover{
+	color: #16d688;
+	transition: all 0.3s;
+}
+
+
+/* technology */
+
+.technology{
+	margin-top: 200px;
+	justify-content: center;
+	width: 100%;
+	height: 500px;
+	align-items: center;
+	background-image: url(https://www.andreyspichak.ru/images/skills-bg.jpg);
+}
+
+.technology_title{
+	text-align: center;
+	color:#a78e5a;
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+/* portfolio */
+
+.portfolio{
+	margin-top: 100px;
+}
+
+.portfolio_title{
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+}
+
+/* portfiloi cards */
+
+.portfolio_cards{
+	display: flex;
+	margin-top: 100px;
+}
+
+
+*, *:after, *:before { 
+	box-sizing: border-box; 
+}
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+.hover-text-one {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	background: #527c82;
+	text-align: center;
+	cursor: pointer;
+	
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hover-text-one figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+.hover-text-one figure h3,
+.hover-text-one figure a {
+	margin: 0;
+}
+.hover-text-one figure a {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+	margin-top: 500px;
+}
+
+/* Эффект при наведении */
+figure.effect-text-three {
+	background: #527c82;
+}
+figure.effect-text-three img {
+	width:350px;
+	height:450px;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+figure.effect-text-three:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three figcaption {
+	text-align: left;
+}
+figure.effect-text-three h3 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+figure.effect-text-three h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+figure.effect-text-three:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three a {
+		margin-top: 500px;
+	width: 300px;
+	height: 50px;
+	background-color: #16d688;
+
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+figure.effect-text-three:hover a {
+
+		margin-top: 500px;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
